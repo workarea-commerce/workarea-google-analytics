@@ -30,22 +30,7 @@ bundle
 Configuration
 --------------------------------------------------------------------------------
 
-To integrate your Workarea application with Google Analytics you need configure your host application with your Google Analytics tracking ID.
-
-You should use application secrets to do this. Add the following to your `config/secrets.yml` file
-
-```yaml
-google_analytics:
-  :tracking_id: UA-2499240-11
-```
-
-Then in workarea.rb add the following config:
-
-```ruby
-Workarea.configure do |config|
-  config.google_analytics_tracking_id = Rails.application.secrets.google_analytics[:tracking_id]
-end
-```
+To integrate your Workarea application with Google Analytics you need configure your host application with your Google Analytics tracking ID in the "Analytics" section on the configuration page within the admin UI.
 
 Shared Payloads
 --------------------------------------------------------------------------------
