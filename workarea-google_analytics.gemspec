@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.0.0'
 
-  s.add_dependency 'workarea', '~> 3.x', '>= 3.5.x'
+  s.add_dependency 'workarea', '>= 3.5.x'
 end
