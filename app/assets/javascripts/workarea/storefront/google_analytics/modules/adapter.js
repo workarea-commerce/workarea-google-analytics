@@ -13,7 +13,7 @@ WORKAREA.analytics.registerAdapter('googleAnalytics', function () {
                 console.log(arguments);
             }
 
-            if (!WORKAREA.environment.isTest) {
+            if (!WORKAREA.environment.isTest && !_.isUndefined(window.ga)) {
               ga.apply(ga, arguments);
             }
         };
