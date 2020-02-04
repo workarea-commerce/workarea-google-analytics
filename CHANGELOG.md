@@ -1,3 +1,18 @@
+Workarea Google Analytics 2.1.6 (2020-02-04)
+--------------------------------------------------------------------------------
+
+*   Don't Call Google Analytics Until It's Defined
+
+    Instead of seeing whether the app is in the test environment, check
+    whether the `ga()` function is present before sending any calls to it.
+    This prevents a JS error that occurs when the
+    `config.google_analytics_tracking_id` is missing.
+
+    GOOGLEANALYTICS-4
+    Tom Scott
+
+
+
 Workarea Google Analytics 2.1.5 (2019-08-21)
 --------------------------------------------------------------------------------
 
