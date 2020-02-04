@@ -1,3 +1,20 @@
+Workarea Google Analytics 2.2.1 (2020-02-04)
+--------------------------------------------------------------------------------
+
+*   Prevent Loading Script When Credentials Not Set
+
+    Only load the `<script>` needed to pull in GA when your tracking ID is
+    actually set up in configuration.
+
+    GOOGLEANALYTICS-2
+    Tom Scott
+
+*   Make google_analytics_tracking_id an administrable field (#1)
+
+    Matt Duffy
+
+
+
 Workarea Google Analytics 2.1.6 (2020-02-04)
 --------------------------------------------------------------------------------
 
